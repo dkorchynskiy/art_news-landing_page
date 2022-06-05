@@ -1,0 +1,45 @@
+.hero {
+  margin-top: 180px;
+  color: var(--white);
+}
+
+.hero__title {
+  max-width: 748px;
+  font-family: "Libre Caslon Display", sans-serif;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 99px;
+}
+
+.hero__title::before {
+  content: "";
+  width: 90px;
+  height: 15px;
+  margin-bottom: 32px;
+
+  display: block;
+
+  background-color: var(--white);
+}
+
+.hero__subtitle {
+  max-width: 528px;
+  margin: 30px 0;
+
+  font-size: 18px;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 477px) {
+  .hero__title {
+    font-size: 70px;
+    line-height: 87px;
+  }
+}
+
+@media screen and (max-width: 476px) {
+  .hero__title {
+    font-size: 50px;
+    line-height: 62px;
+  }
+}
